@@ -84,9 +84,6 @@ a:hover{
     color: white;
 }
 
-.hero-paragraph{
-    
-}
 .animate{
     animation: fade 1s ease-in;
 }
@@ -520,7 +517,7 @@ section{
     .right-fade, .left-fade{
         width: 100px;
     }
-    .marquee-track-2, ..marquee-track{
+    .marquee-track-2, .marquee-track{
         gap: 20px;
     }
     .feedbacks-image{
