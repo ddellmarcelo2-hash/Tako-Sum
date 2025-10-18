@@ -447,7 +447,10 @@ section{
 .swiper-pagination-bullet-active{
     background-color: var(--orange);
 }
-.m
+.marquee-track{
+    display:  flex;
+    gap: 50px;
+}
 @keyframes marquee-left{
     0%{
         transform: translateX(-50%);
