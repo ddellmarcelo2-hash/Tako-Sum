@@ -1,6 +1,16 @@
 let menuButton = document.getElementById('menu-button');
 let navlinkWrapper = document.getElementById('nav-link');
+let links = document.querySelectorAll('a');
+const viewportWidth = window.innerWidth;
+if(viewportWidth<768){
+   
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navlinkWrapper.classList.toggle('show');
+        });
+    });
 
+}
 menuButton.addEventListener('click', () => {
     navlinkWrapper.classList.toggle('show');
 });
@@ -51,6 +61,22 @@ var swiper = new Swiper(".takoyaki-swiper", {
         el: "#takoyaki-pagination",
         clickable: 'true',
     },
+     breakpoints: {
+        // when window width is >= 320px
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+        },
+        640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        991:{
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+
+    }
 });
 var swiper = new Swiper(".dimsum-swiper", {
     spaceBetween: 40,
@@ -68,6 +94,22 @@ var swiper = new Swiper(".dimsum-swiper", {
         el: "#dimsum-pagination",
         clickable: 'true',
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+        },
+        640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        991:{
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+
+    }
 });
 var swiper = new Swiper(".rice-meal-swiper", {
     spaceBetween: 40,
@@ -85,4 +127,20 @@ var swiper = new Swiper(".rice-meal-swiper", {
         el: "#ricemeal-pagination",
         clickable: 'true',
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+        },
+        640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+        },
+        991:{
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+
+    }
 });

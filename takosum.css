@@ -298,11 +298,9 @@ h2{
 
 .feedbacks-image{
     width: 300px;
-    
+    border-radius: 20px;
 }
-.feedbacks-image:nth-child(odd){
-    height: 400px;
-}
+
 
 .masonry-grid{
     columns: 3;
@@ -450,11 +448,52 @@ section{
 .marquee-track{
     display:  flex;
     gap: 50px;
+    animation: marquee-left 10s linear infinite;
+}
+.marquee-track-2{
+    display:  flex;
+    gap: 50px;
+    animation: marquee-right 10s linear infinite;
+}
+.marquee-row{
+    overflow: hidden;
+}
+.marquee-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    margin-top: 40px;
+}
+.left-fade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 24%, rgba(0, 0, 0, 0) 100%);
+}
+.right-fade{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(-90deg,rgba(255, 255, 255, 1) 24%, rgba(0, 0, 0, 0) 100%);
 }
 @keyframes marquee-left{
-    0%{
+    from{
+        transform: translateX(0%);
+    }
+    to{
         transform: translateX(-50%);
-    }100%{
+    }
+}
+@keyframes marquee-right{
+    from{
+        transform: translateX(-50%);
+    }
+    to{
         transform: translateX(0%);
     }
 }
@@ -463,16 +502,33 @@ section{
     .navlink-wrapper{
     position: absolute;
     background: antiquewhite;
-    padding: 20px;
+    padding: 0;
     top: 119px;
     left: 0;
     width: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
     }
     .navlink-wrapper.show{
-        display: flex;
+        height: auto;
+        padding: 20px;
         
+    }
+    .right-fade, .left-fade{
+        width: 100px;
+    }
+    .marquee-track-2, ..marquee-track{
+        gap: 20px;
+    }
+    .feedbacks-image{
+        width: 200px;
+        aspect-ratio: 1/1;
+    }
+    .about-wrapper, .whyus-wrapper{
+        padding: 30px;
     }
     .menu-button{
     display: block;
@@ -503,6 +559,22 @@ section{
     }
     h2{
         text-align: center;
+    }
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .copyright-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .button-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
