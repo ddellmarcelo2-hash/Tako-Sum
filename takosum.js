@@ -38,7 +38,10 @@ images.forEach(image => {
 var swiper = new Swiper(".takoyaki-swiper", {
     spaceBetween: 40,
     loop: 'true',
-    autoplay: 'true',
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     slidesPerView: 3,
     navigation: {
         nextEl: "#takoyaki-next",
@@ -52,7 +55,10 @@ var swiper = new Swiper(".takoyaki-swiper", {
 var swiper = new Swiper(".dimsum-swiper", {
     spaceBetween: 40,
     loop: 'true',
-    autoplay: 'true',
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     slidesPerView: 3,
     navigation: {
         nextEl: "#dimsum-next",
@@ -66,7 +72,10 @@ var swiper = new Swiper(".dimsum-swiper", {
 var swiper = new Swiper(".rice-meal-swiper", {
     spaceBetween: 40,
     loop: 'true',
-    autoplay: 'true',
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     slidesPerView: 3,
     navigation: {
         nextEl: "#rice-meal-next",

@@ -447,6 +447,14 @@ section{
 .swiper-pagination-bullet-active{
     background-color: var(--orange);
 }
+.m
+@keyframes marquee-left{
+    0%{
+        transform: translateX(-50%);
+    }100%{
+        transform: translateX(0%);
+    }
+}
 /* for humburger or menu  */ 
 @media (max-width: 768px) {
     .navlink-wrapper{
