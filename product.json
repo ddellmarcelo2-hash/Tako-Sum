@@ -9,6 +9,14 @@
             "category": "Takoyaki"
         },
         {
+            "id": "tako-001",
+            "name": "Classic Takoyaki",
+            "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
+            "price": 100,
+            "image": "pictures/tako4.jpg",
+            "category": "Takoyaki"
+        },
+        {
             "id": "tako-002",
             "name": "Cheese Takoyaki",
             "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
