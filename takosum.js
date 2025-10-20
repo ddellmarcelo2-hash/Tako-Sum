@@ -142,3 +142,66 @@ var swiper = new Swiper(".rice-meal-swiper", {
 
     }
 });
+
+// Function to load and display products
+async function loadProducts() {
+    try {
+        const response = await fetch('product.json');
+        const data = await response.json();
+        const productsContainerTakoyaki = document.querySelector('#takoyariWrapper');
+        const productsContainerDimsum = document.querySelector('#dimsumWrapper');
+        const productsContainerRiceMeal = document.querySelector('#riceMealWrapper');
+
+        data.products.forEach(product => {
+            const productCard = createProductCard(product);
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'swiper-slide';
+            slideDiv.appendChild(productCard);
+            // Map categories to containers (only 3 categories)
+            if (product.category === "Takoyaki") {
+                productsContainerTakoyaki && productsContainerTakoyaki.appendChild(slideDiv);
+            } else if (product.category === "Dimsum") {
+                productsContainerDimsum && productsContainerDimsum.appendChild(slideDiv);
+            } else if (product.category === "Rice Meal") {
+                productsContainerRiceMeal && productsContainerRiceMeal.appendChild(slideDiv);
+            }
+        });
+    } catch (error) {
+        console.error('Error loading products:', error);
+    }
+}
+
+// Function to create a product card
+function createProductCard(product) {
+    const card = document.createElement('div');
+    card.className = 'products-card';
+
+    card.innerHTML = `
+        <img class="products-image" src="${product.image}" alt="${product.name}">
+        <div class="products-content">
+            <h3>${product.name}</h3>
+            <p class="products-paragraph">${product.description}</p>
+            
+            <a href="#" class="products-button">Buy now</a>
+        </div>
+    `;
+
+    // Add click event listener to the Buy Now button
+    const buyButton = card.querySelector('.products-button');
+    buyButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        handleBuyNow(product);
+    });
+
+    return card;
+}
+
+// Function to handle Buy Now button click
+function handleBuyNow(product) {
+    // You can implement your purchase logic here
+    console.log(`Buying ${product.name} for $${product.price}`);
+    // Add your cart functionality or redirect to checkout page
+}
+
+// Load products when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', loadProducts);

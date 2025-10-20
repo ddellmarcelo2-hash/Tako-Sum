@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": "tako-001",
+            "name": "Classic Takoyaki",
+            "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
+            "price": 8.99,
+            "image": "pictures/takoyaki product.jpg",
+            "category": "Takoyaki"
+        },
+        {
+            "id": "tako-002",
+            "name": "Cheese Takoyaki",
+            "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
+            "price": 9.99,
+            "image": "pictures/takoyaki product.jpg",
+            "category": "Takoyaki"
+        },
+        {
+            "id": "tako-003",
+            "name": "Spicy Takoyaki",
+            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
+            "price": 9.99,
+            "image": "pictures/takoyaki product.jpg",
+            "category": "Dimsum"
+        },
+        {
+            "id": "tako-004",
+            "name": "Veggie Takoyaki",
+            "description": "Vegetarian-friendly takoyaki with mushroom filling and special seasonings.",
+            "price": 8.99,
+            "image": "pictures/takoyaki product.jpg",
+            "category": "Dimsum"
+        },
+        {
+            "id": "tako-005",
+            "name": "Veggie Takoyaki",
+            "description": "Vegetarian-friendly takoyaki with mushroom filling and special seasonings.",
+            "price": 8.99,
+            "image": "pictures/takoyaki product.jpg",
+            "category": "Dimsum"
+        },
+        {
+            "id": "tako-006",
+            "name": "Premium Seafood Takoyaki",
+            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
+            "price": 12.99,
+            "image": "pictures/takoyaki product.jpg",
+            "category": "Rice Meal"
+        }
+    ]
+}
