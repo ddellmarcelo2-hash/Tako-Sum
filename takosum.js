@@ -150,7 +150,7 @@ async function loadProducts() {
         const data = await response.json();
         const productsContainerTakoyaki = document.querySelector('#takoyariWrapper');
         const productsContainerDimsum = document.querySelector('#dimsumWrapper');
-        const productsContainerRiceMeal = document.querySelector('#riceMealWrapper');
+        const productsContainerRiceMeal = document.querySelector('#otherWrapper');
 
         data.products.forEach(product => {
             const productCard = createProductCard(product);
