@@ -502,6 +502,9 @@ section{
     padding: 0px 20px;
     
 }
+.price{
+    font-size: 18px;
+}
 @keyframes marquee-left{
     from{
         transform: translateX(0%);
