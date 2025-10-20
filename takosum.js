@@ -109,7 +109,7 @@ var swiper = new Swiper(".dimsum-swiper", {
 
     }
 });
-var swiper = new Swiper(".rice-meal-swiper", {
+var swiper = new Swiper(".other-foods-swiper", {
     
     loop: 'true',
     autoplay: {
@@ -118,11 +118,11 @@ var swiper = new Swiper(".rice-meal-swiper", {
     },
     slidesPerView: 3,
     navigation: {
-        nextEl: "#rice-meal-next",
-        prevEl: "#rice-meal-prev",
+        nextEl: "#other-foods-next",
+        prevEl: "#other-foods-prev",
     },
     pagination: {
-        el: "#ricemeal-pagination",
+        el: "#otherfoods-pagination",
         clickable: 'true',
     },
     breakpoints: {
