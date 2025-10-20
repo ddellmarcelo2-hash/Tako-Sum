@@ -85,7 +85,7 @@ a:hover{
 }
 
 .animate{
-    animation: fade 1s ease-in;
+    animation: fade 0.8s ease-in;
 }
 
 @keyframes fade{
@@ -250,7 +250,7 @@ h2{
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 16px 15px 35px 5px rgba(0, 0, 0, 0.363)
+    box-shadow: 0px 14px 16px -6px rgba(0, 0, 0, 0.363);
 }
 
 .products-content{
@@ -391,12 +391,14 @@ section{
 .swiper-slide{
     max-width: 450px;
     flex-shrink: 0;
+    padding: 25px;
     
 }
 .swiper-overflow{
     overflow: hidden;
     margin-top: 40px;
     position: relative;
+    padding-bottom: 20px;
 }
 .prev-nav, .next-nav{
     position: absolute;
@@ -410,7 +412,7 @@ section{
     justify-content: center;
     border-radius: 50%;
     top: 50%;
-    left: 10px;
+    left: 30px;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -422,7 +424,7 @@ section{
     background-color: var(--orange);
 }
 .next-nav, .next-nav1, .next-nav{
-    right: 10px;
+    right: 30px;
     left: unset;
 }
 .swiper-pagination{
