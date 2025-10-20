@@ -294,7 +294,7 @@ h2{
 
 .Takoyaki-selection, .Dimsum-selection, .other-foods-selection{
     font-size: 28px;
-    margin-top: 50px;
+    
 }
 
 .feedbacks-image{
@@ -493,6 +493,14 @@ section{
     width: 250px;
     height: 100%;
     background: linear-gradient(-90deg,rgba(255, 255, 255, 1) 24%, rgba(0, 0, 0, 0) 100%);
+}
+.product-subhead-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0px 20px;
+    
 }
 @keyframes marquee-left{
     from{
