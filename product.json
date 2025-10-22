@@ -2,93 +2,123 @@
     "products": [
         {
             "name": "Squid Takoyaki",
-            "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
+            "description": "Fresh squid, creamy batter, and bold flavor. A must try favorite!",
             "price": 320,
             "image": "pictures/tako1.jpg",
             "category": "Takoyaki"
         },
         {
             "name": "Cheese and Kani Takoyaki",
-            "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
+            "description": "Creamy cheese and savory kani, a flavor combo you’ll crave again and again!",
             "price": 320.00,
             "image": "pictures/tako2.jpg",
             "category": "Takoyaki"
         },
         {
             "name": "Scallop and Cheese Takoyaki",
-            "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
+            "description": "Rich cheese meets juicy scallops, a bite of creamy, ocean goodness!",
             "price": "320.00",
             "image": "pictures/tako3.jpg",
             "category": "Takoyaki"
         },
         {
             "name": "Black Octopus Takoyaki",
-            "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
+            "description": "Striking in color, stunning in taste, experience the Black Takoyaki craze!",
             "price": 320.00,
             "image": "pictures/tako4.jpg",
             "category": "Takoyaki"
         },
         {
             "name": "Octopus Takoyaki",
-            "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
+            "description": "Crispy outside, soft inside, filled with real octopus and rich savory flavor.",
             "price": 320,
             "image": "pictures/tako5.jpg",
             "category": "Takoyaki"
         },
+
         {
-            "id": "dimsum-001",
-            "name": "Spicy Takoyaki",
+            "name": "Hakaw",
             "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
             "price": 320,
-            "image": "pictures/tako5.jpg",
+            "image": "pictures/hakaw.jpg",
             "category": "Dimsum"
         },{
-            "id": "dimsum-001",
-            "name": "Spicy Takoyaki",
+            "name": "Fish Siomai",
             "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
             "price": 320,
-            "image": "pictures/tako5.jpg",
+            "image": "pictures/Fishsiomai.jpg",
             "category": "Dimsum"
         },
         {
-            "id": "dimsum-001",
-            "name": "Spicy Takoyaki",
+            "name": "Sheng Jian Bao",
             "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
             "price": 9.99,
-            "image": "pictures/tako5.jpg",
+            "image": "pictures/Shengjianbao.jpg",
             "category": "Dimsum"
         },
         {
-            "id": "dimsum-001",
-            "name": "Spicy Takoyaki",
+            "name": "Pork Xiao Long Bao",
             "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
             "price": 9.99,
-            "image": "pictures/tako5.jpg",
+            "image": "pictures/porkxiaolongbao.jpg",
             "category": "Dimsum"
         },
         {
-            "id": "tako-004",
-            "name": "Veggie Takoyaki",
+            "name": "Chocolate Xiao Long Bao",
             "description": "Vegetarian-friendly takoyaki with mushroom filling and special seasonings.",
             "price": 8.99,
-            "image": "pictures/takoyaki product.jpg",
+            "image": "pictures/chocoxlb.jpg",
             "category": "Dimsum"
         },
         {
-            "id": "tako-005",
-            "name": "Veggie Takoyaki",
+            "name": "Cream Cheese Wonton",
             "description": "Vegetarian-friendly takoyaki with mushroom filling and special seasonings.",
             "price": 8.99,
-            "image": "pictures/takoyaki product.jpg",
+            "image": "pictures/Creamcheesewonto.jpg",
             "category": "Dimsum"
         },
+
         {
-            "id": "tako-006",
             "name": "Premium Seafood Takoyaki",
             "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
             "price": 12.99,
-            "image": "pictures/takoyaki product.jpg",
-            "category": "Rice Meal"
+            "image": "pictures/Chickenteriyakibuns.jpg",
+            "category": "Other Snacks"
+        },
+        {
+            "name": "Premium Seafood Takoyaki",
+            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
+            "price": 12.99,
+            "image": "pictures/Chickenchops.jpg",
+            "category": "Other Snacks"
+        },
+        {
+            "name": "Premium Seafood Takoyaki",
+            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
+            "price": 12.99,
+            "image": "pictures/Tonkatsuramen.jpg",
+            "category": "Other Snacks"
+        },
+        {
+            "name": "Premium Seafood Takoyaki",
+            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
+            "price": 12.99,
+            "image": "pictures/Taiwansausage.jpg",
+            "category": "Other Snacks"
+        },
+        {
+            "name": "Premium Seafood Takoyaki",
+            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
+            "price": 12.99,
+            "image": "pictures/psiomai.jpg",
+            "category": "Other Snacks"
+        },
+        {
+            "name": "Premium Seafood Takoyaki",
+            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
+            "price": 12.99,
+            "image": "pictures/rolls.jpg",
+            "category": "Other Snacks"
         }
     ]
 }

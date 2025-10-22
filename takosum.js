@@ -51,7 +51,7 @@ async function loadProducts() {
         const data = await response.json();
         const productsContainerTakoyaki = document.querySelector('#takoyariWrapper');
         const productsContainerDimsum = document.querySelector('#dimsumWrapper');
-        const productsContainerRiceMeal = document.querySelector('#otherWrapper');
+        const productsContainerOtherSnacks = document.querySelector('#otherWrapper');
 
         data.products.forEach(product => {
             const productCard = createProductCard(product);
@@ -63,8 +63,8 @@ async function loadProducts() {
                 productsContainerTakoyaki && productsContainerTakoyaki.appendChild(slideDiv);
             } else if (product.category === "Dimsum") {
                 productsContainerDimsum && productsContainerDimsum.appendChild(slideDiv);
-            } else if (product.category === "Rice Meal") {
-                productsContainerRiceMeal && productsContainerRiceMeal.appendChild(slideDiv);
+            } else if (product.category === "Other Snacks") {
+                productsContainerOtherSnacks && productsContainerOtherSnacks.appendChild(slideDiv);
             }
         });
     } catch (error) {
@@ -173,7 +173,7 @@ var swiper = new Swiper(".dimsum-swiper", {
 
     }
 });
-var swiper = new Swiper(".other-foods-swiper", {
+var swiper = new Swiper(".other-snacks-swiper", {
     
     loop: 'true',
     autoplay: {
@@ -182,8 +182,8 @@ var swiper = new Swiper(".other-foods-swiper", {
     },
     slidesPerView: 3,
     navigation: {
-        nextEl: "#other-foods-next",
-        prevEl: "#other-foods-prev",
+        nextEl: "#other-snacks-next",
+        prevEl: "#other-snacks-prev",
     },
     pagination: {
         el: "#otherfoods-pagination",
@@ -225,11 +225,11 @@ var swiper = new Swiper(".menu-swiper", {
     
     slidesPerView: 1,
     navigation: {
-        nextEl: "#other-foods-next",
-        prevEl: "#other-foods-prev",
+        nextEl: "#other-snacks-next",
+        prevEl: "#other-snacks-prev",
     },
     pagination: {
-        el: "#otherfoods-pagination",
+        el: "#othersnacks-pagination",
         clickable: 'true',
     },
     
