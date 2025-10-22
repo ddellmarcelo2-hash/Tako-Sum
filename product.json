@@ -2,50 +2,50 @@
     "products": [
         {
             "id": "tako-001",
-            "name": "Classic Takoyaki",
+            "name": "Squid Takoyaki",
             "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
-            "price": 100,
+            "price": "320 24pcs / ₱170 12pcs / ₱70 4pcs ",
             "image": "pictures/tako1.jpg",
             "category": "Takoyaki"
         },
         {
             "id": "tako-001",
-            "name": "Classic Takoyaki",
+            "name": "Black Octopus Takoyaki",
             "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
-            "price": 100,
+            "price": "320 24pcs / ₱170 12pcs / ₱70 4pcs",
             "image": "pictures/tako4.jpg",
             "category": "Takoyaki"
         },
         {
             "id": "tako-002",
-            "name": "Cheese Takoyaki",
+            "name": "Cheese and Kani Takoyaki",
             "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
-            "price": 9.99,
+            "price": "320 24pcs / ₱170 12pcs / ₱70 4pcs ",
             "image": "pictures/takoyaki product.jpg",
             "category": "Takoyaki"
         },
         {
             "id": "tako-002",
-            "name": "Japan Takoyaki",
+            "name": "Octopus Takoyaki",
             "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
-            "price": 100.00,
+            "price": "320 24pcs / ₱170 12pcs / ₱70 4pcs ",
             "image": "pictures/tako3.jpg",
             "category": "Takoyaki"
         },
         {
             "id": "tako-003",
-            "name": "Spicy Takoyaki",
+            "name": "Fish Siomai",
             "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
-            "price": 9.99,
-            "image": "pictures/takoyaki product.jpg",
+            "price": "70",
+            "image": "pictures/Fishsiomai.jpg",
             "category": "Dimsum"
         },
         {
             "id": "tako-004",
-            "name": "Veggie Takoyaki",
+            "name": "Sheng Jian Bao",
             "description": "Vegetarian-friendly takoyaki with mushroom filling and special seasonings.",
-            "price": 8.99,
-            "image": "pictures/takoyaki product.jpg",
+            "price": "320",
+            "image": "pictures/Shengjianbao.jpg",
             "category": "Dimsum"
         },
         {

@@ -181,7 +181,7 @@ function createProductCard(product) {
         <div class="products-content">
             <h3>${product.name}</h3>
             <p class="products-paragraph">${product.description}</p>
-            <p class="price">₱${product.price} / 3pcs</p>
+            <p class="price">₱${product.price}</p>
             <a href="#" class="products-button">Buy now</a>
         </div>
     `;
