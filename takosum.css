@@ -87,7 +87,9 @@ a:hover{
 .animate{
     animation: fade 0.8s ease-in;
 }
-
+section{
+    position:  relative !important;
+}
 @keyframes fade{
     from{
         transform: translateY(20px);
@@ -199,6 +201,7 @@ section{
 
 .about-section, .products-section, .whyus-section{
     padding: 80px 20px;
+    position: relative;
 }
 
 .background-image, .background-image-whyus{
@@ -399,8 +402,6 @@ section{
 }
 .swiper-wrapper{
     display: flex;
-    
-    
 }
 .swiper-slide{
     max-width: 450px;
@@ -504,6 +505,48 @@ section{
 }
 .price{
     font-size: 18px;
+}
+.modal-backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #1307077a;
+    top: 0;
+    z-index: 9999;
+    opacity: 0;
+    display: none;
+}
+.modal-backdrop.open{
+    display: block;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-swiper{
+    max-width: 600px;
+    overflow: hidden;
+}
+.menu-img{
+    width: 100%;
+}
+.close-button{
+    
+    background-color: white;
+    
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-button > i {
+    font-size: 32px;
+    color: var(--orange);
 }
 @keyframes marquee-left{
     from{

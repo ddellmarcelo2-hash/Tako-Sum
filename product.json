@@ -1,43 +1,69 @@
 {
     "products": [
         {
-            "id": "tako-001",
-            "name": "Classic Takoyaki",
+            "name": "Squid Takoyaki",
             "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
-            "price": 100,
+            "price": 320,
             "image": "pictures/tako1.jpg",
             "category": "Takoyaki"
         },
         {
-            "id": "tako-001",
-            "name": "Classic Takoyaki",
+            "name": "Cheese and Kani Takoyaki",
             "description": "Traditional Osaka-style takoyaki with octopus, tempura scraps, pickled ginger, and green onion.",
-            "price": 100,
-            "image": "pictures/tako4.jpg",
+            "price": 320.00,
+            "image": "pictures/tako2.jpg",
             "category": "Takoyaki"
         },
         {
-            "id": "tako-002",
-            "name": "Cheese Takoyaki",
+            "name": "Scallop and Cheese Takoyaki",
             "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
-            "price": 9.99,
-            "image": "pictures/takoyaki product.jpg",
-            "category": "Takoyaki"
-        },
-        {
-            "id": "tako-002",
-            "name": "Japan Takoyaki",
-            "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
-            "price": 100.00,
+            "price": "320.00",
             "image": "pictures/tako3.jpg",
             "category": "Takoyaki"
         },
         {
-            "id": "tako-003",
+            "name": "Black Octopus Takoyaki",
+            "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
+            "price": 320.00,
+            "image": "pictures/tako4.jpg",
+            "category": "Takoyaki"
+        },
+        {
+            "name": "Octopus Takoyaki",
+            "description": "Creamy cheese-filled takoyaki with octopus chunks and special mayo sauce.",
+            "price": 320,
+            "image": "pictures/tako5.jpg",
+            "category": "Takoyaki"
+        },
+        {
+            "id": "dimsum-001",
+            "name": "Spicy Takoyaki",
+            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
+            "price": 320,
+            "image": "pictures/tako5.jpg",
+            "category": "Dimsum"
+        },{
+            "id": "dimsum-001",
+            "name": "Spicy Takoyaki",
+            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
+            "price": 320,
+            "image": "pictures/tako5.jpg",
+            "category": "Dimsum"
+        },
+        {
+            "id": "dimsum-001",
             "name": "Spicy Takoyaki",
             "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
             "price": 9.99,
-            "image": "pictures/takoyaki product.jpg",
+            "image": "pictures/tako5.jpg",
+            "category": "Dimsum"
+        },
+        {
+            "id": "dimsum-001",
+            "name": "Spicy Takoyaki",
+            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
+            "price": 9.99,
+            "image": "pictures/tako5.jpg",
             "category": "Dimsum"
         },
         {

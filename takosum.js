@@ -44,8 +44,72 @@ images.forEach(image => {
     observer.observe(image);
 });
 
+// Function to load and display products
+async function loadProducts() {
+    try {
+        const response = await fetch('product.json');
+        const data = await response.json();
+        const productsContainerTakoyaki = document.querySelector('#takoyariWrapper');
+        const productsContainerDimsum = document.querySelector('#dimsumWrapper');
+        const productsContainerRiceMeal = document.querySelector('#otherWrapper');
 
-var swiper = new Swiper(".takoyaki-swiper", {
+        data.products.forEach(product => {
+            const productCard = createProductCard(product);
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'swiper-slide';
+            slideDiv.appendChild(productCard);
+            // Map categories to containers (only 3 categories)
+            if (product.category === "Takoyaki") {
+                productsContainerTakoyaki && productsContainerTakoyaki.appendChild(slideDiv);
+            } else if (product.category === "Dimsum") {
+                productsContainerDimsum && productsContainerDimsum.appendChild(slideDiv);
+            } else if (product.category === "Rice Meal") {
+                productsContainerRiceMeal && productsContainerRiceMeal.appendChild(slideDiv);
+            }
+        });
+    } catch (error) {
+        console.error('Error loading products:', error);
+    }
+}
+
+// Function to create a product card
+function createProductCard(product) {
+    const card = document.createElement('div');
+    card.className = 'products-card';
+
+    card.innerHTML = `
+        <img class="products-image" src="${product.image}" alt="${product.name}">
+        <div class="products-content">
+            <h3>${product.name}</h3>
+            <p class="products-paragraph">${product.description}</p>
+            <p class="price">₱${product.price}</p>
+            <a href="#" class="products-button">Buy now</a>
+        </div>
+    `;
+
+    // Add click event listener to the Buy Now button
+    const buyButton = card.querySelector('.products-button');
+    buyButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        handleBuyNow(product);
+    });
+
+    return card;
+}
+
+// Function to handle Buy Now button click
+function handleBuyNow(product) {
+    // You can implement your purchase logic here
+    console.log(`Buying ${product.name} for $${product.price}`);
+    // Add your cart functionality or redirect to checkout page
+}
+
+// Load products when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', loadProducts);
+
+
+setTimeout(() => {
+    var swiper = new Swiper(".takoyaki-swiper", {
     spaceBetween: 0,
     loop: 'true',
     
@@ -142,66 +206,32 @@ var swiper = new Swiper(".other-foods-swiper", {
 
     }
 });
+},500);
 
-// Function to load and display products
-async function loadProducts() {
-    try {
-        const response = await fetch('product.json');
-        const data = await response.json();
-        const productsContainerTakoyaki = document.querySelector('#takoyariWrapper');
-        const productsContainerDimsum = document.querySelector('#dimsumWrapper');
-        const productsContainerRiceMeal = document.querySelector('#otherWrapper');
+let modalButton = document.querySelector('#modalOpen');
+let modal = document.querySelector('.modal-backdrop');
+let closeButton = document.querySelector('.close-button');
 
-        data.products.forEach(product => {
-            const productCard = createProductCard(product);
-            const slideDiv = document.createElement('div');
-            slideDiv.className = 'swiper-slide';
-            slideDiv.appendChild(productCard);
-            // Map categories to containers (only 3 categories)
-            if (product.category === "Takoyaki") {
-                productsContainerTakoyaki && productsContainerTakoyaki.appendChild(slideDiv);
-            } else if (product.category === "Dimsum") {
-                productsContainerDimsum && productsContainerDimsum.appendChild(slideDiv);
-            } else if (product.category === "Rice Meal") {
-                productsContainerRiceMeal && productsContainerRiceMeal.appendChild(slideDiv);
-            }
-        });
-    } catch (error) {
-        console.error('Error loading products:', error);
-    }
-}
+modalButton.addEventListener('click', () => {
+    modal.classList.add('open');
+});
+closeButton.addEventListener('click', () => {
+    modal.classList.remove('open');
+})
 
-// Function to create a product card
-function createProductCard(product) {
-    const card = document.createElement('div');
-    card.className = 'products-card';
+var swiper = new Swiper(".menu-swiper", {
+    spaceBetween: 20,
+    loop: 'true',
+    
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#other-foods-next",
+        prevEl: "#other-foods-prev",
+    },
+    pagination: {
+        el: "#otherfoods-pagination",
+        clickable: 'true',
+    },
+    
+});
 
-    card.innerHTML = `
-        <img class="products-image" src="${product.image}" alt="${product.name}">
-        <div class="products-content">
-            <h3>${product.name}</h3>
-            <p class="products-paragraph">${product.description}</p>
-            <p class="price">₱${product.price} / 3pcs</p>
-            <a href="#" class="products-button">Buy now</a>
-        </div>
-    `;
-
-    // Add click event listener to the Buy Now button
-    const buyButton = card.querySelector('.products-button');
-    buyButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        handleBuyNow(product);
-    });
-
-    return card;
-}
-
-// Function to handle Buy Now button click
-function handleBuyNow(product) {
-    // You can implement your purchase logic here
-    console.log(`Buying ${product.name} for $${product.price}`);
-    // Add your cart functionality or redirect to checkout page
-}
-
-// Load products when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', loadProducts);
