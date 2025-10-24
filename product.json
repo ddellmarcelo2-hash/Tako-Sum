@@ -38,42 +38,42 @@
 
         {
             "name": "Hakaw",
-            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
+            "description": "juicy shrimp wrapped in silky dumpling perfection. A classic favorite!",
             "price": 320,
             "image": "pictures/hakaw.jpg",
             "category": "Dimsum"
         },{
             "name": "Fish Siomai",
-            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
-            "price": 320,
+            "description": "Soft, savory, and flavorful. Your new favorite siomai snack!",
+            "price": 70,
             "image": "pictures/Fishsiomai.jpg",
             "category": "Dimsum"
         },
         {
             "name": "Sheng Jian Bao",
-            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
-            "price": 9.99,
+            "description": "A juicy burst of flavor wrapped in a crispy-soft bun!",
+            "price": 210,
             "image": "pictures/Shengjianbao.jpg",
             "category": "Dimsum"
         },
         {
             "name": "Pork Xiao Long Bao",
-            "description": "Hot and spicy takoyaki with chili sauce and seasoned octopus filling.",
+            "description": "Steamed to perfection. Soft wrapper, rich broth, tender pork. Heaven!",
             "price": 9.99,
             "image": "pictures/porkxiaolongbao.jpg",
             "category": "Dimsum"
         },
         {
             "name": "Chocolate Xiao Long Bao",
-            "description": "Vegetarian-friendly takoyaki with mushroom filling and special seasonings.",
+            "description": "Sweet, melty chocolate surprise. Dessert in a dumpling!",
             "price": 8.99,
             "image": "pictures/chocoxlb.jpg",
             "category": "Dimsum"
         },
         {
             "name": "Cream Cheese Wonton",
-            "description": "Vegetarian-friendly takoyaki with mushroom filling and special seasonings.",
-            "price": 8.99,
+            "description": "Golden, crunchy wonton bursting with smooth cheesy goodness!",
+            "price": 110,
             "image": "pictures/Creamcheesewonto.jpg",
             "category": "Dimsum"
         },

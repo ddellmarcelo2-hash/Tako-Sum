@@ -186,7 +186,7 @@ var swiper = new Swiper(".other-snacks-swiper", {
         prevEl: "#other-snacks-prev",
     },
     pagination: {
-        el: "#otherfoods-pagination",
+        el: "#othersnacks-pagination",
         clickable: 'true',
     },
     breakpoints: {
