@@ -10,21 +10,21 @@
         {
             "name": "Cheese and Kani Takoyaki",
             "description": "Creamy cheese and savory kani, a flavor combo you’ll crave again and again!",
-            "price": 320.00,
+            "price": 320,
             "image": "pictures/tako2.jpg",
             "category": "Takoyaki"
         },
         {
             "name": "Scallop and Cheese Takoyaki",
             "description": "Rich cheese meets juicy scallops, a bite of creamy, ocean goodness!",
-            "price": "320.00",
+            "price": "320",
             "image": "pictures/tako3.jpg",
             "category": "Takoyaki"
         },
         {
             "name": "Black Octopus Takoyaki",
             "description": "Striking in color, stunning in taste, experience the Black Takoyaki craze!",
-            "price": 320.00,
+            "price": 320,
             "image": "pictures/tako4.jpg",
             "category": "Takoyaki"
         },
@@ -59,65 +59,58 @@
         {
             "name": "Pork Xiao Long Bao",
             "description": "Steamed to perfection. Soft wrapper, rich broth, tender pork. Heaven!",
-            "price": 9.99,
+            "price": 290,
             "image": "pictures/porkxiaolongbao.jpg",
             "category": "Dimsum"
         },
         {
             "name": "Chocolate Xiao Long Bao",
             "description": "Sweet, melty chocolate surprise. Dessert in a dumpling!",
-            "price": 8.99,
+            "price": 130,
             "image": "pictures/chocoxlb.jpg",
             "category": "Dimsum"
         },
         {
             "name": "Cream Cheese Wonton",
             "description": "Golden, crunchy wonton bursting with smooth cheesy goodness!",
-            "price": 110,
+            "price": 250,
             "image": "pictures/Creamcheesewonto.jpg",
             "category": "Dimsum"
         },
 
         {
-            "name": "Premium Seafood Takoyaki",
-            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
-            "price": 12.99,
+            "name": "Chicken Teriyaki Buns",
+            "description": "Sweet glaze, juicy chicken, and a bun you’ll love!",
+            "price": 150,
             "image": "pictures/Chickenteriyakibuns.jpg",
             "category": "Other Snacks"
         },
         {
-            "name": "Premium Seafood Takoyaki",
-            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
-            "price": 12.99,
+            "name": "Taiwanese Chicken Chops",
+            "description": "Your new crispy, juicy chicken obsession!",
+            "price": 80,
             "image": "pictures/Chickenchops.jpg",
             "category": "Other Snacks"
         },
         {
-            "name": "Premium Seafood Takoyaki",
-            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
-            "price": 12.99,
+            "name": "Tonkatsu Ramen",
+            "description": "Rich, creamy broth with tender porkpure comfort in a bowl!",
+            "price": 150,
             "image": "pictures/Tonkatsuramen.jpg",
             "category": "Other Snacks"
         },
         {
-            "name": "Premium Seafood Takoyaki",
-            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
-            "price": 12.99,
+            "name": "Taiwan Sausages",
+            "description": "A must try blend of sweet, smoky, and meaty perfection!",
+            "price": 80,
             "image": "pictures/Taiwansausage.jpg",
             "category": "Other Snacks"
         },
         {
-            "name": "Premium Seafood Takoyaki",
-            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
-            "price": 12.99,
+            "name": "Siomai Premium",
+            "description": "Packed with premium meat, perfectly steamed to perfection",
+            "price": 250,
             "image": "pictures/psiomai.jpg",
-            "category": "Other Snacks"
-        },
-        {
-            "name": "Premium Seafood Takoyaki",
-            "description": "Luxury takoyaki featuring a mix of octopus, shrimp, and scallop.",
-            "price": 12.99,
-            "image": "pictures/rolls.jpg",
             "category": "Other Snacks"
         }
     ]
